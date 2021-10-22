@@ -2,39 +2,39 @@
 Pod::Spec.new do |s|
 
 # 1
-spec.platform = :ios
-spec.ios.deployment_target = '11.0'
-spec.name = "VCLauncheriOSFramework"
-spec.summary = "VCLauncheriOSFramework lets the host app lunch virtual class room using safari view controller."
-spec.requires_arc = true
+s.platform = :ios
+s.ios.deployment_target = '11.0'
+s.name = "VCLauncheriOSFramework"
+s.summary = "VCLauncheriOSFramework lets the host app lunch virtual class room using safari view controller."
+s.requires_arc = true
 
 # 2
-spec.version = "0.1.0"
+s.version = "0.1.0"
 
 # 3
-spec.license = { :type => "MIT", :file => "LICENSE" }
+s.license = { :type => "MIT", :file => "LICENSE" }
 
 # 4
-spec.author = { "Impartus" => "apps@impartus.com" }
+s.author = { "Impartus" => "apps@impartus.com" }
 
 # 5
-spec.homepage = "https://github.com/appsimpartus/VCLauncheriOSFramework"
+s.homepage = "https://github.com/appsimpartus/VCLauncheriOSFramework"
 
 # 6
-spec.source = { :git => "https://github.com/appsimpartus/VCLauncheriOSFramework.git",
-             :tag => "#{spec.version}" }
+s.source = { :git => "https://github.com/appsimpartus/VCLauncheriOSFramework.git",
+             :tag => "#{s.version}" }
 
 # 7
-spec.framework = "UIKit"
-spec.frmaework = "SafariServices"
+s.framework = "UIKit"
+s.framework = "SafariServices"
 
 # 8
-spec.source_files = "VCLauncheriOSFramework/**/*.{swift}"
+s.source_files = "VCLauncheriOSFramework/**/*.{swift}"
 
 # 9
-spec.resources = "VCLauncheriOSFramework/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+s.resources = "VCLauncheriOSFramework/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
 # 10
-spec.swift_version = "5.5"
+s.swift_version = "5.5"
 
 end
