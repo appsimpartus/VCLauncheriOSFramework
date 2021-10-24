@@ -32,9 +32,6 @@ s.framework = "SafariServices"
 s.source_files = "VCLauncheriOSFramework/**/*.{swift}"
 
 # 9
-s.resources = "VCLauncheriOSFramework/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-
-# 10
 s.swift_version = "5.5"
 
 end
