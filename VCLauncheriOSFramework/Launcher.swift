@@ -9,14 +9,16 @@ import Foundation
 import UIKit
 import SafariServices
 
-public final class Launcher {
+open class Launcher {
 
-	public enum Errors {
+	public enum LauncherError {
 		case unableToBuildURL
 		case unableToGetTopVisibleVC
 	}
 
-	public func launch(hostURL: String, token: String, ttid: Int, onCompletion: @escaping ((Errors?)->Void)) {
+	public init() { }
+
+	public func launch(hostURL: String, token: String, ttid: Int, onCompletion: @escaping ((LauncherError?)->Void)) {
 
 		let finalHostURL = hostURL.replacingOccurrences(of: "http://", with: "https://", options: .literal, range: nil)
 		let finalURL = finalHostURL + "gateway/index.html?token=\(token)&vc=\(ttid)"
