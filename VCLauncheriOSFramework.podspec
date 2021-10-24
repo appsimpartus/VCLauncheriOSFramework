@@ -35,6 +35,6 @@ s.source_files = "VCLauncheriOSFramework/**/*.{swift}"
 s.resources = "VCLauncheriOSFramework/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
 # 10
-s.swift_version = "5"
+s.swift_version = "5.5"
 
 end

@@ -16,7 +16,7 @@ public final class Launcher {
 		case unableToGetTopVisibleVC
 	}
 
-	func launch(hostURL: String, token: String, ttid: Int, onCompletion: @escaping ((Errors?)->Void)) {
+	public func launch(hostURL: String, token: String, ttid: Int, onCompletion: @escaping ((Errors?)->Void)) {
 
 		let finalHostURL = hostURL.replacingOccurrences(of: "http://", with: "https://", options: .literal, range: nil)
 		let finalURL = finalHostURL + "gateway/index.html?token=\(token)&vc=\(ttid)"
